@@ -8,20 +8,19 @@ $template = <<<TEMPLATE
 
 <body>
     <h1>###HOTEL1###</h1>
-    <div>
-    <img src='###Image1###'>
-    <p>###Description1###"</p>
-    </div>
-    <h1>###HOTEL2</h1>
-     <div>
+    <img src="###Image1###" height="400px" width="600px">
+    <p>###Description1###</p>
+     <br>
+     
+     <h1>###HOTEL2###</h1>
     <img src='###Image2###'>
-    <p>###Description2###"</p>
-    </div>
-     <h1>###HOTEL3</h1>
-     <div>
+    <p>###Description2###</p>
+    <br>
+    
+     <h1>###HOTEL3###</h1>
     <img src='###Image3###'>
-    <p>###Description3###"</p>
-    </div>
+    <p>###Description3###</p>
+   
 </body>
 </html>
 TEMPLATE;
@@ -65,17 +64,19 @@ $description3='Dieses noble Casino-Resort befindet sich in einem schicken Gebäu
                Check-out: 11:00';
 
 
-str_replace('###HOTEL1###',$hotel1,$template);
-str_replace('###IMAGE1###',$image1,$template);
-str_replace('###DESCRIPTION1###',$description1,$template);
+$template = str_replace('###HOTEL1###',$hotel1,$template);
+$template = str_replace('###Image1###',$image1,$template);
+$template = str_replace('###Description1###',$description1,$template);
 
-str_replace('###HOTEL1###',$hotel2,$template);
-str_replace('###IMAGE1###',$image2,$template);
-str_replace('###DESCRIPTION1###',$description2,$template);
+$template = str_replace('###HOTEL2###',$hotel2,$template);
+$template = str_replace('###Image2###',$image2,$template);
+$template = str_replace('###Description2###',$description2,$template);
 
 
-str_replace('###HOTEL1###',$hotel3,$template);
-str_replace('###IMAGE1###',$image3,$template);
-str_replace('###DESCRIPTION1###',$description3,$template);
+$template = str_replace('###HOTEL3###',$hotel3,$template);
+$template = str_replace('###Image3###',$image3,$template);
+$template = str_replace('###Description3###',$description3,$template);
+
+echo $template;
 
 
