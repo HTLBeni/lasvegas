@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LasVegas Hotels</title>
+
+  <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Las Vegas Hotels</h1>
+<div>
+  {% for hotel in hotels %}
+  <h2>{{hotel.name}} {{hotel.stars}} ⭐</h2>
+    <img src="{{hotel.image}}"/>
+    <p>{{hotel.description}}</p>
+
+  {% endfor %}
+</div>
+</body>
+</html>

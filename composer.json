@@ -1,0 +1,19 @@
+{
+    "name": "htlw3r/lasvegas",
+    "description": "hotel site",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Htlw3r\\Lasvegas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "szydlowski",
+            "email": "8093@htl.rennweg.at"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.3"
+    }
+}
