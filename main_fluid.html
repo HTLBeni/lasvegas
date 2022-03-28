@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:f="http://typo3.org/ns/TYPO3Fluid/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<head>
+    <title>LasVegas Hotels</title>
+
+    <link href="../Twig%20Version/style.css" rel="stylesheet">
+</head>
+<body>
+<h1>Las Vegas Hotels</h1>
+
+<div>
+    <f:for each="{hotels}" as="hotel">
+    <h2>{hotel.name} {hotel.stars} ⭐</h2>
+    <img src="{hotel.image}"/>
+    <p>{hotel.description}</p>
+
+    </f:for>
+</div>
+</body>
+</html>
